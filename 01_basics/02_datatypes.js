@@ -25,3 +25,5 @@ console.log(typeof null);       // returns object
 console.log(typeof undefined);  // returns undefined
 
 //undefined is a type in itself but null is a object.
+
+hellos
