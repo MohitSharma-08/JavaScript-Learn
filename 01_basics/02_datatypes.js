@@ -10,12 +10,12 @@ let name = "mohit"
 let age = 20
 let isLoggedIn = false
 
-// number    => 2 to power 53
-// bigint
+// number    => range of numbers - 2 to power 53
+// bigint    => rarly used
 // string    => '' ""
 // boolean   => true/false
 // null      => standalone value, special value, not undefined just empty
-// undefined => 
+// undefined => variable is declared but no value is given
 // symbol    => uniqueness 
 
 // object    => 
