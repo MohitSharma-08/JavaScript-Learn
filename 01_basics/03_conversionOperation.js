@@ -42,3 +42,19 @@ let someNum = 33
 let stringNum = String(someNum)
 console.log(typeof stringNum); // type conversion into string
 console.log(stringNum)         //returns 33
+
+// operations
+
+let value = 3
+let negValue = -value
+// console.log(negValue)
+
+let str1 = "hello"
+let str2 = "mohit"
+
+let str3 = str1 + str2
+console.log(str3);
+
+console.log("1" + 2);
+console.log(1 + "2");
+console.log(1 + "2");
