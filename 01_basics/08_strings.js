@@ -30,13 +30,14 @@ console.log(sliceStr);
 */
 
 const trimStr = "   m   h   "
-console.log(trimStr);
-console.log(trimStr.trim());
+
+// console.log(trimStr);
+// console.log(trimStr.trim());
 
 
-const url = "https://heh.com/mohit%20sharma=a"
+const url = "https://heh.com/mohit%20sharma"
 console.log(url.replace('%20', '-'));
 
 console.log(url.includes('sundar'));
 
-console.log(game,split('-'));
+console.log(game.split('-'));
