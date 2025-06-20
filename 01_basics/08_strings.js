@@ -35,7 +35,7 @@ console.log(trimStr.trim());
 
 
 const url = "https://heh.com/mohit%20sharma=a"
-console.log(url.replace('%20'. '-'));
+console.log(url.replace('%20', '-'));
 
 console.log(url.includes('sundar'));
 
