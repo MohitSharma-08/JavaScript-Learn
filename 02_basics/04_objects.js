@@ -60,6 +60,26 @@ users[1].email
 // console.log(Object.keys(tinderUser));
 // console.log(Object.values(tinderUser));
 
-console.log(Object.entries(tinderUser));
+// console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));       // returns true/false
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));       // returns true/false
+
+
+// destructuring
+ const course = {
+    coursename: "Js in Hindi",
+    price: "1000"
+ }
+
+//  course.coursename
+const{coursename: name4} = course 
+
+console.log(name4);
+
+
+// destructuring of object (used in react)
+// const navbar = ({company}) => {
+
+// }
+
+// navbar(company = "apple")
