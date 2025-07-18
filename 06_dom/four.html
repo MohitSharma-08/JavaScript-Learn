@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Edit and remove</title>
+</head>
+<body style="background-color: rgb(171, 223, 224); color: black;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+
+<script>
+
+    // not optimized, whole traversal everytime it is called
+    function addLanguage(LangName){
+        const li = document.createElement('li')
+        li.innerHTML = `${LangName}`
+        document.querySelector('.language').appendChild(li)
+    }
+
+    addLanguage("Python")
+    addLanguage("TypeScript")
+
+    // better optimized and managed
+    function addOptiLang(LangName){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(LangName))
+        document.querySelector('.language').appendChild(li)
+    }
+
+
+    // Edit
+    const secondLang = document.querySelector("li:nth-child[2]")
+    const newli = document.createElement('li')
+    newli.textContent = "Ruby"
+
+    secondLang.replaceWith(newli)
+
+    // edit
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = '<li>TypeScript</li>'    
+
+    // remove
+
+    const lastLang = document.querySelector('li:last-child')
+    LangName.remove()
+
+
+</script>
+
+</html>
